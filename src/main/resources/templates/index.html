@@ -8,5 +8,10 @@
   </head>
   <body>
     hello
+    <script
+      type="text/javascript"
+      th:with="scriptUrl = @{/js/sample.js}"
+      th:src="${PathUtil.generateCashedPath(scriptUrl)}"
+    ></script>
   </body>
 </html>
